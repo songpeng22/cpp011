@@ -9,12 +9,18 @@ int main()
 #if 1
     //
     DoCppClass();
-    //Constructor
+    //Constructor - default copy/default move
     DoDefaultConstructors();
+    //Constructor - copy/move/overloaded
     DoConstructors();
+    //Constructor - explicit
+    DoExplicitConstructor();
+    //Constructor - delete to limit copy/move/operator 
     DoCanonicalClassForm();
 
-    DoExplicitConstructor();
+    //Friend
+    DoFriends();
+
     //Design Pattern
     DoAssociation();
 #else
