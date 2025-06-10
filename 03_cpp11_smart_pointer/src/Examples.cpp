@@ -7,8 +7,11 @@ int main()
     std::cout << std::endl
               << std::endl;
 #if 1
+    //smart pointer
     DoUniquePtr();
     DoSharedPtr();
+    //constexpr
+    DoConstexpr();
 #else
     DoC_Class();
     DoCppClass();

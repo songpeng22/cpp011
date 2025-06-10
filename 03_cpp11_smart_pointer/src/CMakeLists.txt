@@ -29,10 +29,9 @@ target_sources(${LIB_NAME}
 
 #project
 FILE (GLOB project_sources
-	Examples.cpp
-    SharedPtr.cpp
-    UniquePtr.cpp
+	*.cpp
 )
+list(REMOVE_ITEM project_sources "logTest.cpp")
 
 SET (project_headers
     Examples.hpp
