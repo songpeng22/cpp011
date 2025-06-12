@@ -12,6 +12,8 @@ int main()
     DoSharedPtr();
     //constexpr
     DoConstexpr();
+    //static_cast
+    DoCasts();
 #else
     DoC_Class();
     DoCppClass();
